@@ -5,4 +5,5 @@ Static website for the mobile game **Boom Zen**, served via GitHub Pages (branch
 - `index.html` – start page
 - `privacy-policy.html` – privacy policy (linked from the app and the Play Console)
 - `impressum.html` – legal notice (Impressum, § 5 DDG)
+- `app-ads.txt` – AdMob authorized sellers file
 - `CNAME` – custom domain
