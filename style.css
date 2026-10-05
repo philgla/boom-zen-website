@@ -1,0 +1,94 @@
+/* Boom Zen — candy look (colours from the game's Candy palette, style.gd).
+   Fredoka is self-hosted (fonts/, SIL OFL) so no request goes to Google Fonts. */
+
+@font-face {
+  font-family: 'Fredoka';
+  src: url('fonts/Fredoka.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  --sky-top: #8fcbff;
+  --sky-bottom: #ffd9ea;
+  --cream: #fff8db;
+  --border: #666bb8;      /* periwinkle */
+  --ink: #3d3861;         /* soft dark indigo */
+  --ink-dim: #757094;
+  --red: #f74257;         /* candy red */
+  --red-dark: #b8283c;
+  --yellow: #ffc71f;
+  --link: #5157b0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%) fixed;
+  background-color: var(--sky-bottom);
+  color: var(--ink);
+  line-height: 1.65;
+  padding: 40px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--cream);
+  border: 4px solid var(--border);
+  border-radius: 24px;
+  padding: 36px 32px;
+  box-shadow: 0 8px 0 rgba(102, 107, 184, 0.25), 0 18px 40px rgba(61, 56, 97, 0.15);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 1px;
+  text-shadow: 0 3px 0 var(--red-dark);
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 32px;
+  margin-bottom: 8px;
+  border-left: 5px solid var(--yellow);
+  padding-left: 12px;
+}
+
+p { margin-bottom: 12px; color: var(--ink); }
+strong { font-weight: 600; }
+
+a { color: var(--link); font-weight: 500; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.divider {
+  border: none;
+  border-top: 2px dashed rgba(102, 107, 184, 0.35);
+  margin: 36px 0;
+}
+
+.footer {
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+  body { padding: 20px 12px; }
+  .container { padding: 24px 18px; border-radius: 18px; }
+  h1 { font-size: 2rem; }
+}
