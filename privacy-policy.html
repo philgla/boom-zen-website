@@ -10,21 +10,21 @@
 <div class="container">
 
   <h1>BOOM ZEN</h1>
-  <p class="subtitle">Privacy Policy &mdash; Last updated: October 6, 2026</p>
+  <p class="subtitle">Privacy Policy &mdash; Last updated: October 7, 2026</p>
 
   <p>This Privacy Policy describes how Philipp Glatz, trading as Sugar Candy Mountain Gaming ("we", "us", or "our"), handles information in connection with the mobile game <strong>Boom Zen</strong> ("the App"), available on Google Play.</p>
 
   <h2>1. Information We Collect</h2>
   <p>We do not directly collect or store any personally identifiable information. However, the App uses third-party services that may collect certain data automatically:</p>
   <p><strong>Google AdMob</strong> — We use AdMob to display rewarded advertisements. AdMob may collect device identifiers, IP addresses, and usage data to serve personalised or non-personalised ads. For users in the EU/EEA, consent is obtained via the Google User Messaging Platform (UMP) before any personalised advertising takes place.</p>
-  <p><strong>Google Firebase Analytics</strong> — We use Firebase Analytics to understand how players interact with the App (e.g. session length, level reached, features used). Firebase uses an app instance identifier and, where available on your device, the advertising ID, and collects usage data; it does not include your name, email or other directly identifying information. See <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</p>
-  <p><strong>Google Play Billing</strong> &mdash; In-app purchases (e.g. diamond packs) are processed by Google Play. We do not receive or store your payment details. To understand purchasing behaviour, we record purchase events (product ID, price, currency, transaction ID and the number of diamonds received) in Firebase Analytics, linked to the app instance identifier. See the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>, which also applies to Google Play.</p>
+  <p><strong>Google Firebase Analytics</strong> — We use Firebase Analytics to understand how players interact with the App (e.g. session length, level reached, features used). Firebase uses an app instance identifier and, where available on your device, the advertising ID, and collects usage data; it does not include your name, email or other directly identifying information. To analyse these events, we export them to Google BigQuery in our own Google Cloud project (data location: EU), where they are deleted automatically after 14 months. See <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</p>
+  <p><strong>Google Play Billing</strong> &mdash; In-app purchases (e.g. diamond packs) are processed by Google Play. We do not receive or store your payment details. To understand purchasing behaviour, we record purchase events (product ID, price, currency, transaction ID, the number of diamonds received and your diamond balance afterwards) in Firebase Analytics, linked to the app instance identifier. See the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>, which also applies to Google Play.</p>
   <h2>2. How We Use Information</h2>
   <p>Data collected by our third-party partners is used solely to:</p>
   <p>— Display relevant advertisements within the App<br>
      — Analyse gameplay patterns to improve the App<br>
      — Detect technical problems, such as ads or purchases that fail<br>
-     — Understand purchasing behaviour and verify purchases</p>
+     — Understand purchasing behaviour and complete purchases (credit the diamonds you bought)</p>
   <p>We do not sell, rent, or share any personal data with third parties beyond what is described above.</p>
   <p><strong>Legal basis.</strong> Personalised advertising is based on your consent (Art. 6(1)(a) GDPR), which you give or refuse in the consent prompt. Analytics with Firebase and non-personalised advertising are based on our legitimate interest in improving the App and financing it as a free game (Art. 6(1)(f) GDPR). Processing of in-app purchases is necessary to perform the purchase contract (Art. 6(1)(b) GDPR).</p>
 
@@ -32,10 +32,10 @@
   <p>Boom Zen is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us and we will take steps to delete it.</p>
 
   <h2>4. Data Retention</h2>
-  <p>We do not store personal data on our own servers. Any data collected by third-party services (AdMob, Firebase, Google Play) is governed by their respective privacy policies and retention periods.</p>
+  <p>We do not run our own servers. The analytics events we export to Google BigQuery (see section 1) are stored in our Google Cloud project in the EU and deleted automatically after 14 months. Apart from that, data collected by third-party services (AdMob, Firebase, Google Play) is governed by their respective privacy policies and retention periods.</p>
 
   <h2>5. Your Rights (GDPR)</h2>
-  <p>If you are located in the European Union or European Economic Area, you have the right to access, correct, or request deletion of your personal data, and the right to object at any time to processing based on our legitimate interest (Art. 21 GDPR), for example analytics. You can object to analytics directly in the App (see section 6) or by contacting us at privacy@boom-zen.com. You also have the right to lodge a complaint with a data protection supervisory authority. Since we do not directly hold personal data, requests should be directed to the relevant third-party providers:</p>
+  <p>If you are located in the European Union or European Economic Area, you have the right to access, correct, or request deletion of your personal data, and the right to object at any time to processing based on our legitimate interest (Art. 21 GDPR), for example analytics. You can object to analytics directly in the App (see section 6) or by contacting us at privacy@boom-zen.com. You also have the right to lodge a complaint with a data protection supervisory authority. For the analytics events in our BigQuery project (see section 4), contact us at the address above. For data held by the third-party providers, you can also contact them directly:</p>
   <p>— Google AdMob and Google Play (in-app purchases): <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a><br>
      — Google Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
 
